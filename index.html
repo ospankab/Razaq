@@ -6,6 +6,8 @@
 		<link rel="stylesheet" href="css/style.css">
 		<title>Razaq</title>
 		<link rel="icon" href="img/mainblock/Razaq_Logo.svg">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	</head>
 	<body>
 		<div class="wrapper">
@@ -15,6 +17,12 @@
 						<img src="img/mainblock/Razaq_Logo.svg" alt="">
 					</a>
 					<nav class="header__menu menu">
+						<input type="checkbox" id="check-menu">
+						<label for="check-menu">Меню</label>
+						<div class="burger-line first"></div>
+						<div class="burger-line second"></div>
+						<div class="burger-line third"></div>
+						<div class="burger-line fourth"></div>
 						<ul class="menu__list">
 							<li class="menu__item">
 								<a href="" class="menu__link">Услуги</a>
@@ -358,11 +366,13 @@
 					<div class="reviews__container _container">
 						<div class="reviews__title title_block">Отзывы</div>
 						<div class="reviews__body">
-							<a href=""><img src="img/reviews/arrow_left.svg" alt=""></a>
-							<div class="reviews_image_1"></div>
-							<div class="reviews_image_2"></div>
-							<div class="reviews_image_3"></div>
-							<a href=""><img src="img/reviews/arrow_right.svg" alt=""></a>
+							<div href="" class="owl-prev"><img src="img/reviews/arrow_left.svg" alt=""></div>
+							<div class="owl-carousel owl-theme">
+								<div class="reviews_image_1 item"></div>
+								<div class="reviews_image_2 item"></div>
+								<div class="reviews_image_3 item"></div>
+							</div>
+							<div href="" class="owl-next"><img src="img/reviews/arrow_right.svg" alt=""></div>
 						</div>
 					</div>
 				</section>
@@ -424,6 +434,8 @@
 				</div>
 			</footer>
 		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 		<script src="js/script.js"></script>
 	</body>
 </html>
